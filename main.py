@@ -33,12 +33,12 @@ class Auto:
         
     def cantidadAsientos(self):
         numAsientos = 0
-        asientos = [Asiento(self)]
-        for i in range(len(asientos)):
-            
-             if asientos[i] != 0 or asientos[i] != None:
-                 numAsientos =+1
-                 
+        asientos = self.asientos
+        
+        if asientos != 0:
+            for i in asientos:
+                if i.isinstance(Asiento):
+                    numAsientos =+ 1
         return numAsientos
     
     def verificarIntegridad(self):
