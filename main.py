@@ -35,8 +35,8 @@ class Auto:
         numAsientos = 0
         asientos = self.asientos
         
-        if asientos != 0:
-            for i in asientos:
+        for i in asientos:
+            if asientos[i] != 0:
                 NumAsientos =+ 1
         return numAsientos
     
