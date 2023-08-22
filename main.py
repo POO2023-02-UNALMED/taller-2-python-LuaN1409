@@ -33,10 +33,9 @@ class Auto:
         
     def cantidadAsientos(self):
         numAsientos = 0
-        asientos = [Asiento(self)]
-        for i in range(len(asientos)):
+        for i in self.asientos(len(self.asientos)):
             
-             if asientos[i] != 0 or asientos[i] != None:
+             if self.asientos[i] != 0 or self.asientos[i] != None:
                  count =+1
                  
         return count
