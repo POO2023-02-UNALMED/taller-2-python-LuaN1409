@@ -33,7 +33,7 @@ class Auto:
         
     def cantidadAsientos(self):
         numAsientos = 0
-        asientos = self.asientos
+        asientos = self.Asiento
         
         for i in asientos:
             if asientos[i] != 0:
